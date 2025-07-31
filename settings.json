@@ -1,0 +1,49 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.dedupe",
+            "label": "dedupe",
+            "description": "sort and delete dupes",
+            "sequence": [
+                "editor.action.sortLinesAscending",
+                "editor.action.removeDuplicateLines",
+            ]
+        }
+    ],
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.accessibilitySupport": "off",
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": false,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true,
+        "contributors": true,
+        "fileHistory": false,
+        "repositories": true,
+        "searchAndCompare": false,
+        "launchpad": false
+    },
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "indentRainbow.excludedLanguages": [
+        "javascript",
+        "typescript",
+        "json",
+        "html",
+        "css",
+        "markdown",
+        "sql"
+    ],
+    "application.shellEnvironmentResolutionTimeout": 30,
+    "workbench.colorTheme": "Default Light Modern",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.sideBar.location": "right"
+}
