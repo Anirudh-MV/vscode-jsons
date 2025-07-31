@@ -1,0 +1,88 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+shift+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.closePanel",
+                // "workbench.action.closeAuxiliaryBar" // close copilot chat
+            ]
+        }
+    },
+    {
+        "key": "cmd+l",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "github.copilot.chat.attachSelection",
+                // "workbench.action.closeAuxiliaryBar" // close copilot chat
+            ]
+        }
+    },
+    {
+        "key": "cmd+k s d",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "sortLines.sortLines",
+                "sortLines.removeDuplicateLines"
+                // "workbench.action.closeAuxiliaryBar" // close copilot chat
+            ]
+        }
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "github.copilot.chat.attachSelection"
+    },
+    {
+        "key": "ctrl+alt+`",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+cmd+-",
+        "command": "workbench.action.openPreviousRecentlyUsedEditor"
+    },
+    {
+        "key": "ctrl+cmd+=",
+        "command": "workbench.action.openNextRecentlyUsedEditor"
+    },
+    {
+        "key": "alt+c",
+        "command": "editor.action.focusPreviousCursor"
+    },
+    {
+        "key": "cmd+k p",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "cursorWordEndRightSelect",
+                "editor.action.transformToPascalcase",
+                "cursorRight"
+            ]
+        }
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editor.action.sortLinesAscending",
+                "editor.action.removeDuplicateLines",
+            ]
+        }
+    },
+    {
+        "key": "cmd+k cmd+r",
+        "command": "-workbench.action.keybindingsReference"
+    },
+    {
+        "key": "cmd+k cmd+r",
+        "command": "revealFileInOS"
+    },
+    {
+        "key": "cmd+k cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    }
+]
