@@ -64,6 +64,22 @@
         }
     },
     {
+        "key": "cmd+k c",
+        "command": "editor.action.transformToCamelcase",
+    },
+    {
+        "key": "cmd+k s",
+        "command": "editor.action.transformToSnakecase",
+    },
+    {
+        "key": "cmd+k l",
+        "command": "editor.action.transformToLowercase",
+    },
+    {
+        "key": "cmd+k u",
+        "command": "editor.action.transformToUppercase",
+    },
+    {
         "key": "cmd+k cmd+d",
         "command": "runCommands",
         "args": {
@@ -82,7 +98,7 @@
         "command": "revealFileInOS"
     },
     {
-        "key": "cmd+k cmd+e",
+        "key": "alt+e",
         "command": "workbench.action.focusActiveEditorGroup"
     }
 ]
