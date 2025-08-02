@@ -45,5 +45,32 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.sideBar.location": "right"
+    "editor.multiCursorLimit": 100000,
+    "keyword-o-mat.customKeywords": [
+        ["True", "False", "true", "False"],
+        ["yes", "no"],
+        ["on", "off"],
+        ["enabled", "disabled"],
+        ["active", "inactive"],
+        ["success", "failure"],
+        ["primary", "secondary"],
+        ["default", "custom"],
+        ["open", "closed"],
+        ["start", "stop"],
+        ["up", "down"],
+        ["add", "remove"],
+        ["create", "delete"],
+        ["show", "hide"],
+        ["include", "exclude"],
+        ["allow", "deny"],
+        ["accept", "reject"],
+        ["success", "error"],
+        ["yes", "no"],
+        // ["true", "false"],
+        ["enabled", "disabled"],
+        ["break", "return", "continue"]
+    ],
+    "workbench.sideBar.location": "right",
+    "workbench.colorCustomizations": {},
+    "redhat.telemetry.enabled": false
 }
