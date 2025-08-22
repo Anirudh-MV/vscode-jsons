@@ -100,5 +100,58 @@
     {
         "key": "alt+e",
         "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "cmd+k q",
+        "command": "workbench.action.chat.open",
+        "when": "!chatSetupDisabled && !chatSetupHidden"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.action.chat.open",
+        "when": "!chatSetupDisabled && !chatSetupHidden"
+    },
+    {
+        "key": "cmd+k a",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "cmd+.",
+        "command": "-docs.write",
+        "when": "editorTextFocus && config.docwriter.hotkey.mac == '⌘ + .' && editorLangId =~ /typescript|javascript|python|php|java|c|cpp|csharp|dart|ruby|go|rust/"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.debug.action.selectionToRepl",
+        "when": "editor.hasSelection && editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "alt+-",
+        "command": "cursorUndo",
+        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "alt+shift+-",
+        "command": "cursorRedo",
+        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "workbench.panel.chat.view.copilot.focus",
+        "when": "!chatInputHasFocus"
     }
 ]
