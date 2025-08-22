@@ -47,7 +47,7 @@
     },
     "editor.multiCursorLimit": 100000,
     "keyword-o-mat.customKeywords": [
-        ["True", "False", "true", "False"],
+        ["True", "false", "true", "False"],
         ["yes", "no"],
         ["on", "off"],
         ["enabled", "disabled"],
@@ -68,9 +68,27 @@
         ["yes", "no"],
         // ["true", "false"],
         ["enabled", "disabled"],
-        ["break", "return", "continue"]
+        ["break", "return", "continue"],
+        ["info", "debug", "error"],
+        ["INFO", "DEBUG", "ERROR", "WARN"],
+    ],
+    "pylint.args": [
+        "--disable=E0402",
+        "--disable=W0702",
+        "--disable=E1133",
+        "--disable=C0116",
+        "--disable=C0301",
+        "--disable=C0303",
     ],
     "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {},
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "sortLines.ignoreUnselectedLastLine": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
