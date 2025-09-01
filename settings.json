@@ -1,5 +1,6 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
+    "sqltools.highlightQuery": false,
     "multiCommand.commands": [
         {
             "command": "multiCommand.dedupe",
@@ -90,5 +91,12 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "debug.onTaskErrors": "debugAnyway",
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
     }
 }
