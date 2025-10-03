@@ -44,7 +44,7 @@
     "window.autoDetectColorScheme": true,
     "workbench.preferredLightColorTheme": "Solarized Light",
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "editor.multiCursorLimit": 100000,
     "keyword-o-mat.customKeywords": [
@@ -82,7 +82,12 @@
         "--disable=C0303",
     ],
     "workbench.sideBar.location": "right",
-    "workbench.colorCustomizations": {},
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#1e3a8a",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#1e3a8a99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
     "redhat.telemetry.enabled": false,
     "github.copilot.nextEditSuggestions.enabled": true,
     "sortLines.ignoreUnselectedLastLine": true,
@@ -98,5 +103,29 @@
     "debug.onTaskErrors": "debugAnyway",
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
-    }
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "window.commandCenter": false,
+    "chat.commandCenter.enabled": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "terminal.integrated.fontFamily": "MesloLGS NF",
 }
