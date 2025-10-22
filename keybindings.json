@@ -150,8 +150,48 @@
         "when": "editorTextFocus && !inDebugRepl"
     },
     {
+        "key": "alt+w",
+        "command": "editor.action.toggleWordWrap",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+cmd+i",
         "command": "workbench.panel.chat.view.copilot.focus",
         "when": "!chatInputHasFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-workbench.action.chat.newChat",
+        "when": "chatIsEnabled && inChat"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-workbench.action.openChat",
+        "when": "chatIsEnabled && inChat && inChatEditor"
+    },
+    {
+        "key": "f9",
+        "command": "-sortLines.sortLines",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+[ArrowRight]",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "alt+[ArrowLeft]",
+        "command": "workbench.action.increaseViewSize",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "alt+[ArrowLeft]",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "chatInputHasFocus"
+    },
+    {
+        "key": "alt+[ArrowRight]",
+        "command": "workbench.action.increaseViewSize",
+        "when": "chatInputHasFocus"
     }
 ]
