@@ -150,7 +150,7 @@
         "when": "editorTextFocus && !inDebugRepl"
     },
     {
-        "key": "alt+w",
+        "key": "cmd+k w",
         "command": "editor.action.toggleWordWrap",
         "when": "editorTextFocus"
     },
@@ -175,6 +175,20 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "cmd+\\",
+        "when": "editorTextFocus",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.splitEditor",
+                "openEditors.newUntitledFile",
+                "workbench.action.previousEditor",
+                "workbench.action.closeActiveEditor"
+                // "workbench.action.closeAuxiliaryBar" // close copilot chat
+            ]
+        }
+    },
+    {
         "key": "alt+[ArrowRight]",
         "command": "workbench.action.decreaseViewSize",
         "when": "sideBarFocus"
@@ -187,11 +201,16 @@
     {
         "key": "alt+[ArrowLeft]",
         "command": "workbench.action.decreaseViewSize",
-        "when": "chatInputHasFocus"
+        "when": "activeAuxiliary && !editorTextFocus && !sideBarFocus && !chatInputHasFocus"
     },
     {
         "key": "alt+[ArrowRight]",
         "command": "workbench.action.increaseViewSize",
-        "when": "chatInputHasFocus"
+        "when": "activeAuxiliary && !editorTextFocus && !sideBarFocus && !chatInputHasFocus"
+    },
+    {
+        "key": "alt+e",
+        "command": "git.openFile",
+        "when": "isInDiffEditor"
     }
 ]
