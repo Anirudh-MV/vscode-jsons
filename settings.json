@@ -128,4 +128,15 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "terminal.integrated.fontFamily": "MesloLGS NF",
+    "python.analysis.typeCheckingMode": "basic",
+    "chat.tools.terminal.autoApprove": {
+        "find": true,
+        "function": true,
+        "}": true,
+        "/dev/null": true
+    },
+    "chat.agent.maxRequests": 100,
+    "php.problems.exclude": {
+        "/": ["PHP0417", "PHP0413"]
+    },
 }
