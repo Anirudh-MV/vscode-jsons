@@ -189,6 +189,20 @@
         }
     },
     {
+        "key": "cmd+shift+\\",
+        "when": "editorTextFocus",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.splitEditorDown",
+                "openEditors.newUntitledFile",
+                "workbench.action.previousEditor",
+                "workbench.action.closeActiveEditor"
+                // "workbench.action.closeAuxiliaryBar" // close copilot chat
+            ]
+        }
+    },
+    {
         "key": "alt+[ArrowRight]",
         "command": "workbench.action.decreaseViewSize",
         "when": "sideBarFocus"
