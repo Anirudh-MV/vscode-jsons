@@ -205,22 +205,22 @@
     {
         "key": "alt+[ArrowRight]",
         "command": "workbench.action.decreaseViewSize",
-        "when": "sideBarFocus"
+        "when": "sideBarFocus && !textInputFocus"
     },
     {
         "key": "alt+[ArrowLeft]",
         "command": "workbench.action.increaseViewSize",
-        "when": "sideBarFocus"
+        "when": "sideBarFocus && !textInputFocus"
     },
     {
         "key": "alt+[ArrowLeft]",
         "command": "workbench.action.decreaseViewSize",
-        "when": "activeAuxiliary && !editorTextFocus && !sideBarFocus && !chatInputHasFocus"
+        "when": "activeAuxiliary && !sideBarFocus && !textInputFocus"
     },
     {
         "key": "alt+[ArrowRight]",
         "command": "workbench.action.increaseViewSize",
-        "when": "activeAuxiliary && !editorTextFocus && !sideBarFocus && !chatInputHasFocus"
+        "when": "activeAuxiliary && !sideBarFocus && !textInputFocus"
     },
     {
         "key": "alt+e",
