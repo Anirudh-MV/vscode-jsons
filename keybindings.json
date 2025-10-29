@@ -205,12 +205,12 @@
     {
         "key": "alt+[ArrowRight]",
         "command": "workbench.action.decreaseViewSize",
-        "when": "sideBarFocus && !textInputFocus"
+        "when": "sideBarFocus && !textInputFocus && !searchInputBoxFocus"
     },
     {
         "key": "alt+[ArrowLeft]",
         "command": "workbench.action.increaseViewSize",
-        "when": "sideBarFocus && !textInputFocus"
+        "when": "sideBarFocus && !textInputFocus && !searchInputBoxFocus"
     },
     {
         "key": "alt+[ArrowLeft]",
